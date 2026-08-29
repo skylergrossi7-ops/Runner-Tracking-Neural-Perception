@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "dataset_root": "data/public_runner_v1",
+  "passed": true,
+  "images": 412,
+  "labeled_images": 412,
+  "unlabeled_images": 0,
+  "negative_images": 0,
+  "objects": 436,
+  "class_counts": {
+    "0": 436
+  },
+  "image_dimensions": {
+    "minimum_width": 1920,
+    "maximum_width": 2560,
+    "minimum_height": 1080,
+    "maximum_height": 1440
+  },
+  "sessions": {
+    "train": {
+      "images": 360,
+      "labeled_images": 360,
+      "negative_images": 0,
+      "objects": 384
+    },
+    "val": {
+      "images": 52,
+      "labeled_images": 52,
+      "negative_images": 0,
+      "objects": 52
+    }
+  },
+  "duplicate_image_groups": 0,
+  "errors": [],
+  "warnings": [],
+  "session_metadata_present": false
+}

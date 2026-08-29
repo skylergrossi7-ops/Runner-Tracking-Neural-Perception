@@ -1,0 +1,124 @@
+schema_version: 1
+
+# Ten independent sessions provide a balanced Phase 1 starting matrix.
+# Each run receives a timestamped bag directory, so reruns remain independent.
+sessions:
+  - id: near_normal_clear_straight
+    distance: near
+    lighting: normal
+    occlusion: none
+    duration: 15
+    start_y: 5.0
+    speed: 0.8
+    travel_distance: 18.0
+    lateral_amplitude: 0.0
+    lateral_wavelength: 10.0
+    occlusion_windows: ""
+
+  - id: near_backlit_partial_slalom
+    distance: near
+    lighting: backlit
+    occlusion: partial
+    duration: 15
+    start_y: 5.0
+    speed: 0.9
+    travel_distance: 20.0
+    lateral_amplitude: 1.8
+    lateral_wavelength: 8.0
+    occlusion_windows: "5:2"
+
+  - id: near_low_clear_curve
+    distance: near
+    lighting: low
+    occlusion: none
+    duration: 15
+    start_y: 5.0
+    speed: 0.8
+    travel_distance: 18.0
+    lateral_amplitude: 1.0
+    lateral_wavelength: 18.0
+    occlusion_windows: ""
+
+  - id: mid_normal_partial_slalom
+    distance: mid
+    lighting: normal
+    occlusion: partial
+    duration: 15
+    start_y: 8.0
+    speed: 1.0
+    travel_distance: 22.0
+    lateral_amplitude: 2.0
+    lateral_wavelength: 9.0
+    occlusion_windows: "6:2"
+
+  - id: mid_backlit_clear_straight
+    distance: mid
+    lighting: backlit
+    occlusion: none
+    duration: 15
+    start_y: 8.0
+    speed: 0.9
+    travel_distance: 20.0
+    lateral_amplitude: 0.0
+    lateral_wavelength: 10.0
+    occlusion_windows: ""
+
+  - id: mid_low_partial_curve
+    distance: mid
+    lighting: low
+    occlusion: partial
+    duration: 15
+    start_y: 8.0
+    speed: 0.8
+    travel_distance: 18.0
+    lateral_amplitude: 1.5
+    lateral_wavelength: 16.0
+    occlusion_windows: "7:2"
+
+  - id: far_normal_clear_straight
+    distance: far
+    lighting: normal
+    occlusion: none
+    duration: 15
+    start_y: 12.0
+    speed: 1.0
+    travel_distance: 22.0
+    lateral_amplitude: 0.0
+    lateral_wavelength: 10.0
+    occlusion_windows: ""
+
+  - id: far_backlit_partial_slalom
+    distance: far
+    lighting: backlit
+    occlusion: partial
+    duration: 15
+    start_y: 12.0
+    speed: 1.0
+    travel_distance: 22.0
+    lateral_amplitude: 2.0
+    lateral_wavelength: 10.0
+    occlusion_windows: "5:2"
+
+  - id: far_low_clear_curve
+    distance: far
+    lighting: low
+    occlusion: none
+    duration: 15
+    start_y: 12.0
+    speed: 0.8
+    travel_distance: 18.0
+    lateral_amplitude: 1.2
+    lateral_wavelength: 18.0
+    occlusion_windows: ""
+
+  - id: mid_normal_clear_curve
+    distance: mid
+    lighting: normal
+    occlusion: none
+    duration: 15
+    start_y: 8.0
+    speed: 0.9
+    travel_distance: 20.0
+    lateral_amplitude: 1.0
+    lateral_wavelength: 20.0
+    occlusion_windows: ""

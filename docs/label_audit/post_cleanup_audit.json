@@ -1,0 +1,1808 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-28T17:53:16.614293Z",
+  "dataset_root": "data/public_runner_v1",
+  "settings": {
+    "pose_model": "yolov8n-pose.pt",
+    "imgsz": 960,
+    "confidence": 0.25,
+    "match_iou": 0.25,
+    "duplicate_iou": 0.65
+  },
+  "images_audited": 412,
+  "issue_counts": {
+    "label_without_strong_person_support": 26,
+    "strong_person_without_label": 74
+  },
+  "session_issue_counts": [
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "type": "unlabeled_person",
+      "count": 6
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "type": "unsupported",
+      "count": 18
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "type": "unlabeled_person",
+      "count": 61
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "type": "unsupported",
+      "count": 6
+    },
+    {
+      "session": "local_pexels_35608296_forest_trail",
+      "type": "unsupported",
+      "count": 2
+    },
+    {
+      "session": "local_pexels_36505987_rural_path",
+      "type": "unlabeled_person",
+      "count": 2
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "type": "unlabeled_person",
+      "count": 5
+    }
+  ],
+  "issues": [
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000330.jpg",
+      "label": "0 0.46425924 0.47339155 0.02909241 0.09280760",
+      "frame_index": 330,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            1130.568359375,
+            966.751220703125,
+            1484.29833984375,
+            1345.561279296875
+          ],
+          "confidence": 0.4361552894115448
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000330.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000330.txt",
+      "frame_index": 330,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          1130.568359375,
+          966.751220703125,
+          1484.29833984375,
+          1345.561279296875
+        ],
+        "confidence": 0.4361552894115448
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000334.jpg",
+      "label": "0 0.46456928 0.46910112 0.03051739 0.08759460",
+      "frame_index": 334,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000338.jpg",
+      "label": "0 0.46138010 0.45956133 0.01470890 0.05611844",
+      "frame_index": 338,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            1066.59716796875,
+            952.9754028320312,
+            1458.51416015625,
+            1362.1859130859375
+          ],
+          "confidence": 0.4247336983680725
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000338.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000338.txt",
+      "frame_index": 338,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          1066.59716796875,
+          952.9754028320312,
+          1458.51416015625,
+          1362.1859130859375
+        ],
+        "confidence": 0.4247336983680725
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000348.jpg",
+      "label": "0 0.45595293 0.47475505 0.01882801 0.09039722",
+      "frame_index": 348,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000352.jpg",
+      "label": "0 0.45266519 0.47292455 0.02327976 0.08842875",
+      "frame_index": 352,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000356.jpg",
+      "label": "0 0.44987383 0.47308409 0.03008661 0.08847148",
+      "frame_index": 356,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000358.jpg",
+      "label": "0 0.44831204 0.47229657 0.03553543 0.08727095",
+      "frame_index": 358,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000362.jpg",
+      "label": "0 0.45276017 0.47200775 0.02834530 0.08341353",
+      "frame_index": 362,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            880.4269409179688,
+            974.0764770507812,
+            1154.8846435546875,
+            1330.4310302734375
+          ],
+          "confidence": 0.5033820271492004
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000362.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000362.txt",
+      "frame_index": 362,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          880.4269409179688,
+          974.0764770507812,
+          1154.8846435546875,
+          1330.4310302734375
+        ],
+        "confidence": 0.5033820271492004
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000364.jpg",
+      "label": "0 0.45116119 0.47252570 0.02838268 0.08526103",
+      "frame_index": 364,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000366.jpg",
+      "label": "0 0.44838057 0.47116542 0.02217770 0.08363436",
+      "frame_index": 366,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000408.jpg",
+      "label": "0 0.41387630 0.47237083 0.02897339 0.08721212",
+      "frame_index": 408,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000412.jpg",
+      "label": "0 0.41684513 0.47298270 0.02327852 0.08113929",
+      "frame_index": 412,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            375.037841796875,
+            982.4387817382812,
+            649.81640625,
+            1350.080078125
+          ],
+          "confidence": 0.5120593309402466
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000412.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000412.txt",
+      "frame_index": 412,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          375.037841796875,
+          982.4387817382812,
+          649.81640625,
+          1350.080078125
+        ],
+        "confidence": 0.5120593309402466
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000414.jpg",
+      "label": "0 0.41519432 0.47393188 0.02143135 0.08041950",
+      "frame_index": 414,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000416.jpg",
+      "label": "0 0.41441283 0.47527746 0.02284155 0.08176134",
+      "frame_index": 416,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            347.5322265625,
+            985.6466674804688,
+            611.9732055664062,
+            1355.6094970703125
+          ],
+          "confidence": 0.4036288857460022
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000416.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000416.txt",
+      "frame_index": 416,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          347.5322265625,
+          985.6466674804688,
+          611.9732055664062,
+          1355.6094970703125
+        ],
+        "confidence": 0.4036288857460022
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000418.jpg",
+      "label": "0 0.41141157 0.47493023 0.01844912 0.08041238",
+      "frame_index": 418,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000440.jpg",
+      "label": "0 0.39865592 0.47895610 0.02121968 0.07629615",
+      "frame_index": 440,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": [
+        {
+          "xyxy": [
+            191.1206512451172,
+            978.5448608398438,
+            394.2230529785156,
+            1357.4757080078125
+          ],
+          "confidence": 0.2565738260746002
+        }
+      ]
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000440.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000440.txt",
+      "frame_index": 440,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          191.1206512451172,
+          978.5448608398438,
+          394.2230529785156,
+          1357.4757080078125
+        ],
+        "confidence": 0.2565738260746002
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000448.jpg",
+      "label": "0 0.39373360 0.48093063 0.01683578 0.08449071",
+      "frame_index": 448,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31956040_desert_road",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_31956040_desert_road_0000452.jpg",
+      "label": "0 0.39051609 0.48105664 0.02259502 0.08435228",
+      "frame_index": 452,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000222.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000222.txt",
+      "frame_index": 222,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1727.2200927734375,
+          581.4031372070312,
+          1854.01171875,
+          820.1082153320312
+        ],
+        "confidence": 0.4583773612976074
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000228.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000228.txt",
+      "frame_index": 228,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1715.05078125,
+          584.764892578125,
+          1827.2103271484375,
+          820.4193725585938
+        ],
+        "confidence": 0.345342218875885
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000234.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000234.txt",
+      "frame_index": 234,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          978.8911743164062,
+          646.0496215820312,
+          1111.0906982421875,
+          931.28369140625
+        ],
+        "confidence": 0.8143856525421143
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000246.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000246.txt",
+      "frame_index": 246,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1623.7457275390625,
+          581.8915405273438,
+          1737.9534912109375,
+          825.495849609375
+        ],
+        "confidence": 0.38011646270751953
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000258.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000258.txt",
+      "frame_index": 258,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1561.9384765625,
+          1146.69873046875,
+          1749.0296630859375,
+          1440.0
+        ],
+        "confidence": 0.3670310378074646
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000288.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000288.txt",
+      "frame_index": 288,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1532.3541259765625,
+          617.7096557617188,
+          1644.9537353515625,
+          880.3815307617188
+        ],
+        "confidence": 0.7555067539215088
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000294.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000294.txt",
+      "frame_index": 294,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          799.76025390625,
+          800.9411010742188,
+          942.6687622070312,
+          1174.3199462890625
+        ],
+        "confidence": 0.8252142071723938
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000294.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000294.txt",
+      "frame_index": 294,
+      "type": "strong_person_without_label",
+      "prediction_index": 2,
+      "prediction": {
+        "xyxy": [
+          1828.6343994140625,
+          1119.0361328125,
+          2007.1959228515625,
+          1440.0
+        ],
+        "confidence": 0.3888349235057831
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000300.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000300.txt",
+      "frame_index": 300,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1504.6976318359375,
+          614.5859375,
+          1627.6802978515625,
+          888.0192260742188
+        ],
+        "confidence": 0.7712083458900452
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000318.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000318.txt",
+      "frame_index": 318,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          662.9630737304688,
+          890.527099609375,
+          789.4783325195312,
+          1252.7886962890625
+        ],
+        "confidence": 0.8143720626831055
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000330.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000330.txt",
+      "frame_index": 330,
+      "type": "strong_person_without_label",
+      "prediction_index": 2,
+      "prediction": {
+        "xyxy": [
+          2209.182373046875,
+          1108.1046142578125,
+          2408.925048828125,
+          1440.0
+        ],
+        "confidence": 0.4070906937122345
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000336.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000336.txt",
+      "frame_index": 336,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          2274.5498046875,
+          1109.25341796875,
+          2514.186767578125,
+          1440.0
+        ],
+        "confidence": 0.32984018325805664
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000342.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000342.txt",
+      "frame_index": 342,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          2378.153076171875,
+          1095.21142578125,
+          2560.0,
+          1440.0
+        ],
+        "confidence": 0.33252325654029846
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000348.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000348.txt",
+      "frame_index": 348,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          361.2217712402344,
+          951.1067504882812,
+          548.9891967773438,
+          1418.0653076171875
+        ],
+        "confidence": 0.6602486968040466
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000348.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000348.txt",
+      "frame_index": 348,
+      "type": "strong_person_without_label",
+      "prediction_index": 2,
+      "prediction": {
+        "xyxy": [
+          2463.170654296875,
+          1108.90771484375,
+          2560.0,
+          1440.0
+        ],
+        "confidence": 0.5621399879455566
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000378.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000378.txt",
+      "frame_index": 378,
+      "type": "strong_person_without_label",
+      "prediction_index": 2,
+      "prediction": {
+        "xyxy": [
+          1819.7618408203125,
+          656.0595092773438,
+          2025.60107421875,
+          862.935302734375
+        ],
+        "confidence": 0.30201295018196106
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000396.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000396.txt",
+      "frame_index": 396,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1395.6878662109375,
+          723.6466674804688,
+          1551.0875244140625,
+          1099.30224609375
+        ],
+        "confidence": 0.8297742605209351
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000408.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000408.txt",
+      "frame_index": 408,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1392.455078125,
+          744.7522583007812,
+          1531.857421875,
+          1069.1544189453125
+        ],
+        "confidence": 0.6270526051521301
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000462.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000462.txt",
+      "frame_index": 462,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          401.1568298339844,
+          944.5121459960938,
+          626.76416015625,
+          1314.839599609375
+        ],
+        "confidence": 0.920703113079071
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000468.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000468.txt",
+      "frame_index": 468,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          463.3788757324219,
+          948.8716430664062,
+          634.9418334960938,
+          1327.716064453125
+        ],
+        "confidence": 0.8872771263122559
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000492.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000492.txt",
+      "frame_index": 492,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          527.0029296875,
+          1000.5452270507812,
+          788.4551391601562,
+          1440.0
+        ],
+        "confidence": 0.736811637878418
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000498.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000498.txt",
+      "frame_index": 498,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          575.4154663085938,
+          1062.34326171875,
+          783.35693359375,
+          1440.0
+        ],
+        "confidence": 0.8633952140808105
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000504.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000504.txt",
+      "frame_index": 504,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          585.051025390625,
+          1169.1937255859375,
+          831.266845703125,
+          1440.0
+        ],
+        "confidence": 0.7342276573181152
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000510.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000510.txt",
+      "frame_index": 510,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          611.4832153320312,
+          1179.8504638671875,
+          804.087890625,
+          1440.0
+        ],
+        "confidence": 0.8312671780586243
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000516.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000516.txt",
+      "frame_index": 516,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          632.8477783203125,
+          1189.7821044921875,
+          847.4279174804688,
+          1440.0
+        ],
+        "confidence": 0.8321551084518433
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000522.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000522.txt",
+      "frame_index": 522,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          646.921142578125,
+          1174.9122314453125,
+          900.613525390625,
+          1440.0
+        ],
+        "confidence": 0.8740718960762024
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000528.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000528.txt",
+      "frame_index": 528,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          680.0851440429688,
+          1166.6923828125,
+          939.5910034179688,
+          1440.0
+        ],
+        "confidence": 0.7473015189170837
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000534.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000534.txt",
+      "frame_index": 534,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          706.0309448242188,
+          1182.54150390625,
+          976.6253051757812,
+          1440.0
+        ],
+        "confidence": 0.779674768447876
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000540.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000540.txt",
+      "frame_index": 540,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          721.4948120117188,
+          1127.7322998046875,
+          1011.3831176757812,
+          1440.0
+        ],
+        "confidence": 0.7834500670433044
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000546.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000546.txt",
+      "frame_index": 546,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          729.3626098632812,
+          1168.154296875,
+          1068.5863037109375,
+          1440.0
+        ],
+        "confidence": 0.8423312902450562
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000552.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000552.txt",
+      "frame_index": 552,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          735.3461303710938,
+          1179.15625,
+          1097.050537109375,
+          1440.0
+        ],
+        "confidence": 0.8265302777290344
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000558.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000558.txt",
+      "frame_index": 558,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          691.3790893554688,
+          1173.67578125,
+          1061.58544921875,
+          1440.0
+        ],
+        "confidence": 0.8479915261268616
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000564.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000564.txt",
+      "frame_index": 564,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          674.977294921875,
+          1172.2398681640625,
+          1093.059326171875,
+          1440.0
+        ],
+        "confidence": 0.8130317330360413
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000576.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000576.txt",
+      "frame_index": 576,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          602.604248046875,
+          1183.4815673828125,
+          904.5161743164062,
+          1440.0
+        ],
+        "confidence": 0.8017270565032959
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000582.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000582.txt",
+      "frame_index": 582,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          547.6173706054688,
+          1203.19287109375,
+          840.6740112304688,
+          1440.0
+        ],
+        "confidence": 0.6765806078910828
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000588.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000588.txt",
+      "frame_index": 588,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          479.0079650878906,
+          1173.5054931640625,
+          764.4299926757812,
+          1440.0
+        ],
+        "confidence": 0.7709388732910156
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000594.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000594.txt",
+      "frame_index": 594,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          414.33251953125,
+          1178.6697998046875,
+          675.91015625,
+          1440.0
+        ],
+        "confidence": 0.4089547097682953
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000594.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000594.txt",
+      "frame_index": 594,
+      "type": "strong_person_without_label",
+      "prediction_index": 2,
+      "prediction": {
+        "xyxy": [
+          276.4530334472656,
+          1178.869140625,
+          671.6349487304688,
+          1440.0
+        ],
+        "confidence": 0.3089616894721985
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000600.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000600.txt",
+      "frame_index": 600,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          302.1885986328125,
+          1164.93359375,
+          619.4805297851562,
+          1440.0
+        ],
+        "confidence": 0.6499232053756714
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000606.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000606.txt",
+      "frame_index": 606,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          209.87391662597656,
+          1139.62158203125,
+          576.9985961914062,
+          1440.0
+        ],
+        "confidence": 0.8804852962493896
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000612.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000612.txt",
+      "frame_index": 612,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          184.325439453125,
+          1143.7872314453125,
+          511.43896484375,
+          1440.0
+        ],
+        "confidence": 0.8945474624633789
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000618.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000618.txt",
+      "frame_index": 618,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          190.1909942626953,
+          1142.6507568359375,
+          422.8901062011719,
+          1440.0
+        ],
+        "confidence": 0.5797170400619507
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000624.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000624.txt",
+      "frame_index": 624,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          137.1112518310547,
+          1133.8687744140625,
+          357.6399841308594,
+          1440.0
+        ],
+        "confidence": 0.6475343704223633
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000630.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000630.txt",
+      "frame_index": 630,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          25.191436767578125,
+          1135.19482421875,
+          323.6401672363281,
+          1440.0
+        ],
+        "confidence": 0.875613808631897
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000636.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000636.txt",
+      "frame_index": 636,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          2.36224365234375,
+          1097.4354248046875,
+          309.9927978515625,
+          1440.0
+        ],
+        "confidence": 0.9230121970176697
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000642.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000642.txt",
+      "frame_index": 642,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          68.26586151123047,
+          1056.7308349609375,
+          329.4305725097656,
+          1440.0
+        ],
+        "confidence": 0.8951911330223083
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000648.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000648.txt",
+      "frame_index": 648,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          72.5841064453125,
+          1031.0716552734375,
+          341.4742431640625,
+          1440.0
+        ],
+        "confidence": 0.8994727730751038
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000654.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000654.txt",
+      "frame_index": 654,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          71.76598358154297,
+          1004.7493286132812,
+          343.0596923828125,
+          1433.1741943359375
+        ],
+        "confidence": 0.8923717141151428
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000660.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000660.txt",
+      "frame_index": 660,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          1632.2646484375,
+          826.7830200195312,
+          2056.622802734375,
+          1439.2691650390625
+        ],
+        "confidence": 0.9094144701957703
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000678.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000678.txt",
+      "frame_index": 678,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          419.3118591308594,
+          840.6692504882812,
+          596.6005859375,
+          1168.8173828125
+        ],
+        "confidence": 0.8747450113296509
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000684.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000684.txt",
+      "frame_index": 684,
+      "type": "strong_person_without_label",
+      "prediction_index": 0,
+      "prediction": {
+        "xyxy": [
+          496.6165466308594,
+          812.3027954101562,
+          684.0029907226562,
+          1099.6824951171875
+        ],
+        "confidence": 0.8584594130516052
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000690.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000690.txt",
+      "frame_index": 690,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          581.5108032226562,
+          774.3943481445312,
+          777.5702514648438,
+          1070.3699951171875
+        ],
+        "confidence": 0.8607434034347534
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000696.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000696.txt",
+      "frame_index": 696,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          675.28662109375,
+          729.4627075195312,
+          827.7780151367188,
+          1024.0333251953125
+        ],
+        "confidence": 0.8024972677230835
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000702.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000702.txt",
+      "frame_index": 702,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          745.6227416992188,
+          701.6806640625,
+          886.2244262695312,
+          951.9772338867188
+        ],
+        "confidence": 0.7094475030899048
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000708.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000708.txt",
+      "frame_index": 708,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          812.8063354492188,
+          682.9064331054688,
+          936.0442504882812,
+          939.36767578125
+        ],
+        "confidence": 0.6521068215370178
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000714.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000714.txt",
+      "frame_index": 714,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          872.169921875,
+          656.4109497070312,
+          1008.5051879882812,
+          911.99755859375
+        ],
+        "confidence": 0.6809251308441162
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000726.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000726.txt",
+      "frame_index": 726,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          980.59716796875,
+          613.2284545898438,
+          1115.2020263671875,
+          844.733154296875
+        ],
+        "confidence": 0.6223903894424438
+      },
+      "best_label_iou": 0.06475270608370713
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000756.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000756.txt",
+      "frame_index": 756,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1126.8270263671875,
+          517.3351440429688,
+          1224.372314453125,
+          722.908203125
+        ],
+        "confidence": 0.28519895672798157
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000774.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000774.txt",
+      "frame_index": 774,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1167.66455078125,
+          485.136474609375,
+          1275.6085205078125,
+          673.0473022460938
+        ],
+        "confidence": 0.278470903635025
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000780.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000780.txt",
+      "frame_index": 780,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1179.2366943359375,
+          480.6767578125,
+          1325.6976318359375,
+          663.4142456054688
+        ],
+        "confidence": 0.2978152334690094
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000918.jpg",
+      "label": "0 0.61200142 0.38907287 0.04688110 0.14189557",
+      "frame_index": 918,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000924.jpg",
+      "label": "0 0.62658744 0.39687393 0.04530716 0.15902246",
+      "frame_index": 924,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0000966.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000966.txt",
+      "frame_index": 966,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1758.5142822265625,
+          443.3243713378906,
+          1896.630859375,
+          671.4923706054688
+        ],
+        "confidence": 0.4749990701675415
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0001032.jpg",
+      "label": "0 0.58970616 0.34846788 0.03691688 0.13191861",
+      "frame_index": 1032,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0001056.jpg",
+      "label": "0 0.54724534 0.36189947 0.02897553 0.12369972",
+      "frame_index": 1056,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0001296.jpg",
+      "label": "0 0.36772673 0.33853420 0.04087257 0.16621952",
+      "frame_index": 1296,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_31990568_misty_forest_group",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_31990568_misty_forest_group_0001302.jpg",
+      "label": "0 0.37400265 0.33087802 0.04097037 0.15141686",
+      "frame_index": 1302,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_35608296_forest_trail",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_35608296_forest_trail_0000084.jpg",
+      "label": "0 0.61604435 0.44413923 0.03439507 0.11704407",
+      "frame_index": 84,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_35608296_forest_trail",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_35608296_forest_trail_0000129.jpg",
+      "label": "0 0.29857610 0.42101862 0.06950033 0.23645354",
+      "frame_index": 129,
+      "type": "label_without_strong_person_support",
+      "label_index": 0,
+      "best_prediction_iou": 0.0,
+      "predictions": []
+    },
+    {
+      "session": "local_pexels_36505987_rural_path",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_36505987_rural_path_0000030.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_36505987_rural_path_0000030.txt",
+      "frame_index": 30,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1226.611572265625,
+          714.7677612304688,
+          1303.2469482421875,
+          988.9866333007812
+        ],
+        "confidence": 0.6589138507843018
+      },
+      "best_label_iou": 0.15122566625553835
+    },
+    {
+      "session": "local_pexels_36505987_rural_path",
+      "split": "val",
+      "image": "data/public_runner_v1/images/val/local_pexels_36505987_rural_path_0000048.jpg",
+      "label": "data/public_runner_v1/labels/val/local_pexels_36505987_rural_path_0000048.txt",
+      "frame_index": 48,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1211.6719970703125,
+          676.4288940429688,
+          1352.8575439453125,
+          976.0408325195312
+        ],
+        "confidence": 0.6797851324081421
+      },
+      "best_label_iou": 0.17575378935552663
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_4385897_road_silhouette_0000105.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000105.txt",
+      "frame_index": 105,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1195.337646484375,
+          534.3431396484375,
+          1919.423095703125,
+          1076.6553955078125
+        ],
+        "confidence": 0.33382365107536316
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_4385897_road_silhouette_0000108.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000108.txt",
+      "frame_index": 108,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1193.793212890625,
+          534.5096435546875,
+          1920.0,
+          1075.9525146484375
+        ],
+        "confidence": 0.39521223306655884
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_4385897_road_silhouette_0000111.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000111.txt",
+      "frame_index": 111,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1187.38134765625,
+          534.0263671875,
+          1920.0,
+          1073.96435546875
+        ],
+        "confidence": 0.43772438168525696
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_4385897_road_silhouette_0000114.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000114.txt",
+      "frame_index": 114,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1180.09423828125,
+          535.0087890625,
+          1920.0,
+          1073.0128173828125
+        ],
+        "confidence": 0.46225014328956604
+      },
+      "best_label_iou": 0.0
+    },
+    {
+      "session": "local_pexels_4385897_road_silhouette",
+      "split": "train",
+      "image": "data/public_runner_v1/images/train/local_pexels_4385897_road_silhouette_0000117.jpg",
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000117.txt",
+      "frame_index": 117,
+      "type": "strong_person_without_label",
+      "prediction_index": 1,
+      "prediction": {
+        "xyxy": [
+          1176.468505859375,
+          535.16943359375,
+          1920.0,
+          1073.7840576171875
+        ],
+        "confidence": 0.42800089716911316
+      },
+      "best_label_iou": 0.0
+    }
+  ]
+}

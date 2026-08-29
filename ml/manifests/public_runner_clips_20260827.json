@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "collection_id": "public_runner_clips_20260827",
+  "collected_at": "2026-08-27",
+  "purpose": "Raw public video sessions for runner detection and aerial-following dataset development.",
+  "storage_root": "data/public_runner_clips",
+  "license": {
+    "name": "Pexels License",
+    "url": "https://www.pexels.com/license/",
+    "summary": "Pexels states that its photos and videos are free to use and modify and that attribution is not required. Unaltered redistribution on stock media platforms is prohibited.",
+    "raw_media_git_policy": "Do not commit or redistribute the downloaded source clips. Commit annotations, manifests, code, and model results instead."
+  },
+  "selection_policy": {
+    "required": [
+      "visible person running or jogging",
+      "outdoor scene",
+      "explicitly marked free to use by the source",
+      "landscape video suitable for extracting detector frames"
+    ],
+    "preferred": [
+      "aerial or drone viewpoint",
+      "rear-following viewpoint",
+      "distance and background diversity",
+      "partial occlusion or difficult lighting"
+    ]
+  },
+  "clips": [
+    {
+      "session_id": "pexels_11966894",
+      "file": "data/public_runner_clips/pexels_11966894_rural_rear_follow.mp4",
+      "bytes": 17087696,
+      "sha256": "0f73970c3aa65c50a2f66756be7c5600acef0e56623c73fda8def0c75582565d",
+      "title": "Drone captures a person jogging on a picturesque rural trail.",
+      "creator": "Florian Delee",
+      "source_page": "https://www.pexels.com/video/back-view-of-a-runner-training-in-a-rural-area-11966894/",
+      "download_url": "https://videos.pexels.com/video-files/11966894/11966894-uhd_2560_1440_30fps.mp4",
+      "resolution": "2560x1440",
+      "fps": 29.97,
+      "duration_seconds": 9.557,
+      "tags": ["aerial", "rear-follow", "single-runner", "rural-trail", "trees"]
+    },
+    {
+      "session_id": "pexels_16935445",
+      "file": "data/public_runner_clips/pexels_16935445_aerial_park.mp4",
+      "bytes": 61569591,
+      "sha256": "6425313d10f0f53b44ee64c2cb06b81232799d64b591cb252bb33f796bc32080",
+      "title": "Aerial footage of a man jogging on a sunny day in a green park.",
+      "creator": "Jaxon Matthew Willis",
+      "source_page": "https://www.pexels.com/video/drone-running-man-16935445/",
+      "download_url": "https://videos.pexels.com/video-files/16935445/16935445-hd_1920_1080_30fps.mp4",
+      "resolution": "1920x1080",
+      "fps": 29.97,
+      "duration_seconds": 88.522,
+      "tags": ["aerial", "single-runner", "park", "sunny", "urban-trail"]
+    },
+    {
+      "session_id": "pexels_31990568",
+      "file": "data/public_runner_clips/pexels_31990568_misty_forest_group.mp4",
+      "bytes": 60794004,
+      "sha256": "5de76b6faec9b82d17e771480d7790a3bc322b0fc5b7d848977187ad31a38426",
+      "title": "Aerial footage of athletes running through a foggy forest in autumn.",
+      "creator": "Florian Delee",
+      "source_page": "https://www.pexels.com/video/drone-view-of-runners-in-misty-forest-trail-31990568/",
+      "download_url": "https://videos.pexels.com/video-files/31990568/13633297_2560_1440_60fps.mp4",
+      "resolution": "2560x1440",
+      "fps": 59.94,
+      "duration_seconds": 22.556,
+      "tags": ["aerial", "multiple-runners", "mist", "forest", "occlusion", "low-contrast"]
+    },
+    {
+      "session_id": "pexels_35608296",
+      "file": "data/public_runner_clips/pexels_35608296_forest_trail.mp4",
+      "bytes": 33081644,
+      "sha256": "293dee634f23bf604538d1f838fd12ef1b5a29864c166efb3122afed9a8e788e",
+      "title": "A drone captures a runner cutting through the serene Fontainebleau forest landscape.",
+      "creator": "Florian Delee",
+      "source_page": "https://www.pexels.com/video/dynamic-drone-footage-of-runner-in-fontainebleau-forest-35608296/",
+      "download_url": "https://videos.pexels.com/video-files/35608296/15090187_2560_1440_30fps.mp4",
+      "resolution": "2560x1440",
+      "fps": 29.97,
+      "duration_seconds": 5.038,
+      "tags": ["aerial", "single-runner", "forest", "trail", "partial-occlusion"]
+    },
+    {
+      "session_id": "pexels_36505987",
+      "file": "data/public_runner_clips/pexels_36505987_rural_path.mp4",
+      "bytes": 39149183,
+      "sha256": "b317af2483b50ff313993c0909c76579ef1de8273aeb16a20d95962d300244d2",
+      "title": "Drone captures a lone runner on a dirt path amidst open fields.",
+      "creator": "Mike Art",
+      "source_page": "https://www.pexels.com/video/aerial-shot-of-trail-runner-on-rural-path-36505987/",
+      "download_url": "https://videos.pexels.com/video-files/36505987/15479755_2560_1440_60fps.mp4",
+      "resolution": "2560x1440",
+      "fps": 59.94,
+      "duration_seconds": 5.172,
+      "tags": ["aerial", "single-runner", "rural-road", "open-field", "long-range"]
+    },
+    {
+      "session_id": "pexels_9956051",
+      "file": "data/public_runner_clips/pexels_9956051_field_runner.mp4",
+      "bytes": 29376897,
+      "sha256": "e0c27aa15e5eaf06261ec2d9312eb7e57b8b595d911a6ce38ad3bfff18e7fdc4",
+      "title": "Aerial drone footage of a man running through a lush green wheat field.",
+      "creator": "Petkevich Evgeniy",
+      "source_page": "https://www.pexels.com/video/drone-shot-of-man-running-in-field-9956051/",
+      "download_url": "https://videos.pexels.com/video-files/9956051/9956051-uhd_2560_1440_25fps.mp4",
+      "resolution": "2560x1440",
+      "fps": 25,
+      "duration_seconds": 19.68,
+      "tags": ["aerial", "single-runner", "field", "vegetation", "partial-occlusion"]
+    }
+  ]
+}

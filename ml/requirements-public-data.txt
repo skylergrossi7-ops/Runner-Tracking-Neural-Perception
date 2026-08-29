@@ -1,0 +1,6 @@
+# Install in the isolated ML environment, not the ROS/cv_bridge environment.
+opencv-python>=4.8
+PyYAML>=6.0
+ultralytics>=8.0
+roboflow>=1.1
+kaggle>=1.7

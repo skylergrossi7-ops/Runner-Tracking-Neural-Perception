@@ -1,0 +1,197 @@
+{
+  "schema_version": 1,
+  "collection_id": "public_runner_clips_expanded_20260827",
+  "collected_at": "2026-08-27",
+  "purpose": "Real-world runner footage for aerial runner detector development; simulation frames are excluded.",
+  "storage_root": "data/public_runner_clips",
+  "license": {
+    "name": "Pexels License",
+    "url": "https://www.pexels.com/license/",
+    "summary": "Pexels states that its photos and videos are free to use and modify and that attribution is not required. Unaltered redistribution on stock media platforms is prohibited.",
+    "raw_media_git_policy": "Do not commit or redistribute downloaded source clips. Commit provenance, code, annotations, and derived results only."
+  },
+  "selection_policy": {
+    "required": [
+      "visible person running or jogging",
+      "real-world outdoor footage",
+      "source page explicitly covered by the stated free-use license",
+      "clean direct media URL tied to the reviewed source page"
+    ],
+    "rejection": [
+      "simulation or synthetic imagery",
+      "unclear reuse rights",
+      "duplicate clip or alternate edit from the same shoot",
+      "walking-only or no visible runner"
+    ]
+  },
+  "clips": [
+    {
+      "session_id": "pexels_8240074",
+      "file": "data/public_runner_clips/pexels_8240074_mountain_road.mp4",
+      "title": "Aerial view of person running on road through mountains in bright daylight.",
+      "creator": "ArtHouse Studio",
+      "source_page": "https://www.pexels.com/video/drone-footage-of-a-man-running-in-the-road-8240074/",
+      "download_url": "https://videos.pexels.com/video-files/8240074/8240074-uhd_2732_1440_30fps.mp4",
+      "tags": [
+        "aerial",
+        "single-runner",
+        "mountain-road",
+        "daylight"
+      ],
+      "bytes": 14073664,
+      "sha256": "e3fcb014597a2561c8e1f50138b9c53d32752b58738d8ef4c6d376326748153b"
+    },
+    {
+      "session_id": "pexels_31956040",
+      "file": "data/public_runner_clips/pexels_31956040_desert_road.mp4",
+      "title": "Drone footage of a man running on a deserted road in a desert landscape.",
+      "creator": "Joshua Woroniecki",
+      "source_page": "https://www.pexels.com/video/aerial-view-of-runner-on-desert-road-at-dawn-31956040/",
+      "download_url": "https://videos.pexels.com/video-files/31956040/13616284_2560_1440_24fps.mp4",
+      "tags": [
+        "aerial",
+        "single-runner",
+        "desert-road",
+        "dawn"
+      ],
+      "bytes": 33698923,
+      "sha256": "2139416a2e0d273a004de27562efd23167533ffe3a9a9d71580309cb2c627ab7"
+    },
+    {
+      "session_id": "pexels_7179290",
+      "file": "data/public_runner_clips/pexels_7179290_track_aerial.mp4",
+      "title": "High-angle aerial shot of a man running on an outdoor track.",
+      "creator": "Mike Sangma",
+      "source_page": "https://www.pexels.com/video/aerial-shot-of-a-man-running-on-the-track-7179290/",
+      "download_url": "https://videos.pexels.com/video-files/7179290/7179290-hd_1920_1080_25fps.mp4",
+      "tags": [
+        "aerial",
+        "single-runner",
+        "running-track",
+        "daylight"
+      ],
+      "bytes": 10768087,
+      "sha256": "21b694476fed61b124d7ae9eea219be58a890ffdd4c5a4aea4501db26ec0170e"
+    },
+    {
+      "session_id": "pexels_855789",
+      "file": "data/public_runner_clips/pexels_855789_waterfront_marathon.mp4",
+      "title": "Aerial view of marathon runners along a waterfront city road.",
+      "creator": "Pixabay",
+      "source_page": "https://www.pexels.com/video/time-lapse-video-of-runners-855789/",
+      "download_url": "https://videos.pexels.com/video-files/855789/855789-hd_1920_1080_30fps.mp4",
+      "tags": [
+        "aerial",
+        "multiple-runners",
+        "waterfront",
+        "urban",
+        "crowd"
+      ],
+      "bytes": 14352836,
+      "sha256": "1d0f0b7fe935c44ecd7e3071fbdbc263711b34bd083699c618b5a090b752f476"
+    },
+    {
+      "session_id": "pexels_4385897",
+      "file": "data/public_runner_clips/pexels_4385897_road_silhouette.mp4",
+      "title": "Low angle of silhouetted runner on a road during daytime.",
+      "creator": "Ranjeet Chauhan",
+      "source_page": "https://www.pexels.com/video/a-man-running-on-the-road-4385897/",
+      "download_url": "https://videos.pexels.com/video-files/4385897/4385897-hd_1920_1080_30fps.mp4",
+      "tags": [
+        "ground-view",
+        "single-runner",
+        "road",
+        "silhouette"
+      ],
+      "bytes": 6157169,
+      "sha256": "2abcc625cee2687f0e628a24bfbaf4248463b46d71da17e4a61cae50eaeb4bac"
+    },
+    {
+      "session_id": "pexels_8025875",
+      "file": "data/public_runner_clips/pexels_8025875_track_field_aerial.mp4",
+      "title": "Aerial footage of people running on a track in Mexico.",
+      "creator": "Manuel Alejandro Gonzalez",
+      "source_page": "https://www.pexels.com/video/aerial-footage-of-track-and-field-8025875/",
+      "download_url": "https://videos.pexels.com/video-files/8025875/8025875-uhd_2560_1440_24fps.mp4",
+      "tags": [
+        "aerial",
+        "multiple-runners",
+        "running-track",
+        "daylight"
+      ],
+      "bytes": 50706017,
+      "sha256": "87f766f2a7eaf3efba0d054616e452e693ab94f0d0299c9a0f5ac2cf1215ec7d"
+    },
+    {
+      "session_id": "pexels_37453838",
+      "file": "data/public_runner_clips/pexels_37453838_lake_trail.mp4",
+      "title": "Aerial footage of a person jogging along a forest trail beside a lake.",
+      "creator": "Ali Akdemir",
+      "source_page": "https://www.pexels.com/video/scenic-aerial-view-of-forest-and-lake-trail-37453838/",
+      "download_url": "https://videos.pexels.com/video-files/37453838/15863888_2560_1440_60fps.mp4",
+      "tags": [
+        "aerial",
+        "single-runner",
+        "forest-trail",
+        "lake",
+        "long-range"
+      ],
+      "bytes": 87243213,
+      "sha256": "e6f7e6134d972fa6978f76ac85101761684424f2045c9ec476c01df4a5b37430"
+    },
+    {
+      "session_id": "pexels_8490468",
+      "file": "data/public_runner_clips/pexels_8490468_snowy_mountain_road.mp4",
+      "title": "Aerial footage of a runner on a snowy mountain road at sunrise.",
+      "creator": "ArtHouse Studio",
+      "source_page": "https://www.pexels.com/video/aerial-shot-of-a-man-running-on-mountain-road-8490468/",
+      "download_url": "https://videos.pexels.com/video-files/8490468/8490468-uhd_2732_1440_24fps.mp4",
+      "tags": [
+        "aerial",
+        "single-runner",
+        "snow",
+        "mountain-road",
+        "sunrise"
+      ],
+      "bytes": 24584920,
+      "sha256": "ba9cda5396d24798b2999f9ee81661ca8cad066a59721286ae62acb4f9851823"
+    },
+    {
+      "session_id": "pexels_8533478",
+      "file": "data/public_runner_clips/pexels_8533478_adaptive_track_runner.mp4",
+      "title": "Amputee athlete training on a sunny day at a track.",
+      "creator": "KoolShooters",
+      "source_page": "https://www.pexels.com/video/a-male-runner-at-a-running-track-8533478/",
+      "download_url": "https://videos.pexels.com/video-files/8533478/8533478-uhd_2560_1440_25fps.mp4",
+      "tags": [
+        "ground-view",
+        "single-runner",
+        "adaptive-athlete",
+        "running-track"
+      ],
+      "bytes": 10452038,
+      "sha256": "10fb499f17b72518a35e5625745fe4f50aac5a324756a310c86c8f4fa9261fb9"
+    },
+    {
+      "session_id": "pexels_37612711",
+      "file": "data/public_runner_clips/pexels_37612711_track_team_aerial.mp4",
+      "title": "Aerial footage of athletes running on a track in Mexico.",
+      "creator": "Allan Gonzalez",
+      "source_page": "https://www.pexels.com/video/aerial-view-of-team-training-on-athletic-track-37612711/",
+      "download_url": "https://videos.pexels.com/video-files/37612711/15941890_1920_1080_30fps.mp4",
+      "tags": [
+        "aerial",
+        "multiple-runners",
+        "running-track",
+        "team"
+      ],
+      "bytes": 28997194,
+      "sha256": "0c2f4ccf5ba79edae5bf5bd4d4f3b97430cecddfb0f8555729a7116f546f47d6"
+    }
+  ],
+  "download_validation": {
+    "requested": 10,
+    "valid": 10,
+    "failures": []
+  }
+}

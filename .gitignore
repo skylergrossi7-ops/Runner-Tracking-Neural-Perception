@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+.venv/
+venv/
+
+# Generated training and export products
+runs/
+ml/runs/
+*.pt
+*.onnx
+*.engine
+*.xml
+*.bin
+*.zip
+
+# Recreate these licensed inputs with the committed manifests and tools.
+data/public_runner_clips/
+data/rosbag_inbox/
+data/**/images/
+
+# Local credentials and editor state
+.env
+.idea/
+.vscode/
+kaggle.json

@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "description": "Visual and detector-assisted cleanup of runner labels after red-box contact-sheet review.",
+  "desert_relabel": {
+    "session_contains": "31956040_desert_road",
+    "proposals_json": "artifacts/label_cleanup_20260828/desert_detector_proposals/proposals.json",
+    "center_y_range": [0.42, 0.53],
+    "height_range": [0.05, 0.15],
+    "maximum_width": 0.08,
+    "height_score_weight": 5.0,
+    "reason": "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+  },
+  "replace_from_audit_prediction": [
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000834.txt", "reason": "Tree/dark figure replaced by actual runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000972.txt", "reason": "Rock/shadow replaced by actual runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000990.txt", "reason": "Rock/shadow replaced by actual runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000996.txt", "reason": "Rock/shadow replaced by actual runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0001230.txt", "reason": "Tree region replaced by actual runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0001236.txt", "reason": "Tree region replaced by actual runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000045.txt", "reason": "Road shadow replaced by silhouetted runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000048.txt", "reason": "Road shadow replaced by silhouetted runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000051.txt", "reason": "Road shadow replaced by silhouetted runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000054.txt", "reason": "Road shadow replaced by silhouetted runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000060.txt", "reason": "Road shadow replaced by silhouetted runner."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000090.txt", "reason": "Road shadow replaced by silhouetted runner."}
+  ],
+  "keep_indices": [
+    {"label_suffix": "local_pexels_16935445_aerial_park_0001485.txt", "indices": [0], "reason": "Remove runner-shadow box."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000378.txt", "indices": [0, 1], "reason": "Remove non-human vegetation box while preserving two runners."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000420.txt", "indices": [0, 2], "reason": "Collapse three overlapping boxes on the far runner to one box; preserve near runner."},
+    {"label_suffix": "local_pexels_31990568_misty_forest_group_0000960.txt", "indices": [0], "reason": "Remove rock/shadow box."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000069.txt", "indices": [0], "reason": "Remove road-shadow box."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000072.txt", "indices": [0], "reason": "Remove road-shadow box."},
+    {"label_suffix": "local_pexels_4385897_road_silhouette_0000081.txt", "indices": [0], "reason": "Remove road-shadow box."},
+    {"label_suffix": "local_pexels_36505987_rural_path_0000060.txt", "indices": [0], "reason": "Remove duplicate/shadow box beside the runner."}
+  ]
+}

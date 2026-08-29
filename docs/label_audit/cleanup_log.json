@@ -1,0 +1,525 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-28T17:46:21.489032Z",
+  "action": "runner_label_cleanup",
+  "changed_label_files": 38,
+  "boxes_before": 55,
+  "boxes_after": 40,
+  "plan": "ml/manifests/runner_label_cleanup_20260828.json",
+  "audit_report": "artifacts/public_runner_v1_label_audit_20260828.json",
+  "changes": [
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_16935445_aerial_park_0001485.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_16935445_aerial_park_0001485.txt",
+      "before": [
+        "0 0.42289489 0.48226663 0.17316901 0.54866582",
+        "0 0.49441344 0.82722586 0.14685478 0.28390141"
+      ],
+      "after": [
+        "0 0.42289489 0.48226663 0.17316901 0.54866582"
+      ],
+      "reasons": [
+        "Remove runner-shadow box."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000330.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000330.txt",
+      "before": [
+        "0 0.51292896 0.80351270 0.14425669 0.26499185"
+      ],
+      "after": [
+        "0 0.46425924 0.47339155 0.02909241 0.09280760"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000334.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000334.txt",
+      "before": [
+        "0 0.51434116 0.79649838 0.15765429 0.28081695"
+      ],
+      "after": [
+        "0 0.46456928 0.46910112 0.03051739 0.08759460"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000338.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000338.txt",
+      "before": [
+        "0 0.48657789 0.80439307 0.15340633 0.28224017"
+      ],
+      "after": [
+        "0 0.46138010 0.45956133 0.01470890 0.05611844"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000348.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000348.txt",
+      "before": [
+        "0 0.45750216 0.80527857 0.13240101 0.27270991"
+      ],
+      "after": [
+        "0 0.45595293 0.47475505 0.01882801 0.09039722"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000352.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000352.txt",
+      "before": [
+        "0 0.44454123 0.80707393 0.14470479 0.26811651",
+        "0 0.42927284 0.80060005 0.10715218 0.24660077"
+      ],
+      "after": [
+        "0 0.45266519 0.47292455 0.02327976 0.08842875"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000356.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000356.txt",
+      "before": [
+        "0 0.42041017 0.80659203 0.11509731 0.26435415"
+      ],
+      "after": [
+        "0 0.44987383 0.47308409 0.03008661 0.08847148"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000358.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000358.txt",
+      "before": [
+        "0 0.41328754 0.79885322 0.10620575 0.25004408"
+      ],
+      "after": [
+        "0 0.44831204 0.47229657 0.03553543 0.08727095"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000362.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000362.txt",
+      "before": [
+        "0 0.39775959 0.80075361 0.10736787 0.24891798",
+        "0 0.38904735 0.76828851 0.08499343 0.18325399"
+      ],
+      "after": [
+        "0 0.45276017 0.47200775 0.02834530 0.08341353"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000364.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000364.txt",
+      "before": [
+        "0 0.38167337 0.76299517 0.08652089 0.18004011",
+        "0 0.39177479 0.80357395 0.10654595 0.26886461"
+      ],
+      "after": [
+        "0 0.45116119 0.47252570 0.02838268 0.08526103"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000366.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000366.txt",
+      "before": [
+        "0 0.37557552 0.76691994 0.09481978 0.18217049"
+      ],
+      "after": [
+        "0 0.44838057 0.47116542 0.02217770 0.08363436"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000408.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000408.txt",
+      "before": [
+        "0 0.21748831 0.80846772 0.10790759 0.25393266"
+      ],
+      "after": [
+        "0 0.41387630 0.47237083 0.02897339 0.08721212"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000412.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000412.txt",
+      "before": [
+        "0 0.19991626 0.80948544 0.10766474 0.25447714",
+        "0 0.21257257 0.80933569 0.07685366 0.24585143"
+      ],
+      "after": [
+        "0 0.41684513 0.47298270 0.02327852 0.08113929"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000414.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000414.txt",
+      "before": [
+        "0 0.20926498 0.81173583 0.07663530 0.26214557"
+      ],
+      "after": [
+        "0 0.41519432 0.47393188 0.02143135 0.08041950"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000416.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000416.txt",
+      "before": [
+        "0 0.18745207 0.81222615 0.10354888 0.25589625"
+      ],
+      "after": [
+        "0 0.41441283 0.47527746 0.02284155 0.08176134"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000418.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000418.txt",
+      "before": [
+        "0 0.18126056 0.81217810 0.09898759 0.25579923"
+      ],
+      "after": [
+        "0 0.41141157 0.47493023 0.01844912 0.08041238"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000440.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000440.txt",
+      "before": [
+        "0 0.11344295 0.81136095 0.07682578 0.26106631",
+        "0 0.11265615 0.79995836 0.05800861 0.23337440"
+      ],
+      "after": [
+        "0 0.39865592 0.47895610 0.02121968 0.07629615"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000448.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000448.txt",
+      "before": [
+        "0 0.07408220 0.81313542 0.08228373 0.26106249"
+      ],
+      "after": [
+        "0 0.39373360 0.48093063 0.01683578 0.08449071"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_31956040_desert_road_0000452.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_31956040_desert_road_0000452.txt",
+      "before": [
+        "0 0.07301074 0.79073374 0.05291255 0.22980029",
+        "0 0.05689425 0.78921837 0.08477852 0.23114984"
+      ],
+      "after": [
+        "0 0.39051609 0.48105664 0.02259502 0.08435228"
+      ],
+      "reasons": [
+        "Current boxes track the runner shadow/dark bush below the road; replace with the actual runner proposal on the road."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000378.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000378.txt",
+      "before": [
+        "0 0.59082847 0.63626194 0.07934227 0.26409738",
+        "0 0.13757410 0.80069258 0.07419479 0.30314026",
+        "0 0.75076966 0.52813085 0.08042984 0.14311617"
+      ],
+      "after": [
+        "0 0.59082847 0.63626194 0.07934227 0.26409738",
+        "0 0.13757410 0.80069258 0.07419479 0.30314026"
+      ],
+      "reasons": [
+        "Remove non-human vegetation box while preserving two runners."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000420.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000420.txt",
+      "before": [
+        "0 0.11738981 0.75952583 0.06411116 0.22959455",
+        "0 0.52409005 0.65802873 0.04136200 0.27757844",
+        "0 0.51201799 0.65796327 0.06469007 0.27953398",
+        "0 0.49858780 0.65881617 0.09091997 0.28225661"
+      ],
+      "after": [
+        "0 0.11738981 0.75952583 0.06411116 0.22959455",
+        "0 0.51201799 0.65796327 0.06469007 0.27953398"
+      ],
+      "reasons": [
+        "Collapse three overlapping boxes on the far runner to one box; preserve near runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000834.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000834.txt",
+      "before": [
+        "0 0.76569138 0.22670645 0.11857452 0.42223263"
+      ],
+      "after": [
+        "0 0.47959440 0.43247794 0.05164628 0.19429162"
+      ],
+      "reasons": [
+        "Tree/dark figure replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000960.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000960.txt",
+      "before": [
+        "0 0.70965626 0.39285002 0.04684243 0.15789695",
+        "0 0.42524107 0.64215607 0.05766215 0.15325178"
+      ],
+      "after": [
+        "0 0.70965626 0.39285002 0.04684243 0.15789695"
+      ],
+      "reasons": [
+        "Remove rock/shadow box."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000972.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000972.txt",
+      "before": [
+        "0 0.41134821 0.69240778 0.07369297 0.19590225"
+      ],
+      "after": [
+        "0 0.72941060 0.37790664 0.04403343 0.15257795"
+      ],
+      "reasons": [
+        "Rock/shadow replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000990.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000990.txt",
+      "before": [
+        "0 0.39714833 0.78225513 0.09101627 0.12841865"
+      ],
+      "after": [
+        "0 0.74840088 0.38522576 0.06276627 0.14972466"
+      ],
+      "reasons": [
+        "Rock/shadow replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0000996.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0000996.txt",
+      "before": [
+        "0 0.38740871 0.81468099 0.09951797 0.13884057"
+      ],
+      "after": [
+        "0 0.74793022 0.38785209 0.04711165 0.15742503"
+      ],
+      "reasons": [
+        "Rock/shadow replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0001230.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0001230.txt",
+      "before": [
+        "0 0.13467136 0.43340564 0.14405779 0.44649980"
+      ],
+      "after": [
+        "0 0.35766551 0.35204018 0.05416527 0.17364553"
+      ],
+      "reasons": [
+        "Tree region replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_31990568_misty_forest_group_0001236.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_31990568_misty_forest_group_0001236.txt",
+      "before": [
+        "0 0.08969562 0.24555314 0.10251794 0.30899061"
+      ],
+      "after": [
+        "0 0.35174716 0.34943791 0.04594288 0.17594106"
+      ],
+      "reasons": [
+        "Tree region replaced by actual runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/val/local_pexels_36505987_rural_path_0000060.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/val/local_pexels_36505987_rural_path_0000060.txt",
+      "before": [
+        "0 0.46809685 0.56462222 0.08120751 0.26164674",
+        "0 0.50625191 0.56811896 0.08036623 0.24656635"
+      ],
+      "after": [
+        "0 0.46809685 0.56462222 0.08120751 0.26164674"
+      ],
+      "reasons": [
+        "Remove duplicate/shadow box beside the runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000045.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000045.txt",
+      "before": [
+        "0 0.58864619 0.54623605 0.05858765 0.19846169"
+      ],
+      "after": [
+        "0 0.08794856 0.30271330 0.17081696 0.60542659"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000048.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000048.txt",
+      "before": [
+        "0 0.58864326 0.54571181 0.05840658 0.20168889"
+      ],
+      "after": [
+        "0 0.10452204 0.30126122 0.14693972 0.60252245"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000051.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000051.txt",
+      "before": [
+        "0 0.58797518 0.54824688 0.05885379 0.19928001"
+      ],
+      "after": [
+        "0 0.12845141 0.30225771 0.13983374 0.60379644"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000054.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000054.txt",
+      "before": [
+        "0 0.58882764 0.54352724 0.05863864 0.20421727"
+      ],
+      "after": [
+        "0 0.14747308 0.31073077 0.13659693 0.58473601"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000060.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000060.txt",
+      "before": [
+        "0 0.58923664 0.54165389 0.05808601 0.21115056"
+      ],
+      "after": [
+        "0 0.17041941 0.32095727 0.13294293 0.55828609"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000069.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000069.txt",
+      "before": [
+        "0 0.20142473 0.31905136 0.12696349 0.52744723",
+        "0 0.58945732 0.54402347 0.05808182 0.19194732"
+      ],
+      "after": [
+        "0 0.20142473 0.31905136 0.12696349 0.52744723"
+      ],
+      "reasons": [
+        "Remove road-shadow box."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000072.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000072.txt",
+      "before": [
+        "0 0.21128181 0.29458070 0.12083677 0.46157837",
+        "0 0.58923022 0.54694769 0.05802854 0.19974679"
+      ],
+      "after": [
+        "0 0.21128181 0.29458070 0.12083677 0.46157837"
+      ],
+      "reasons": [
+        "Remove road-shadow box."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000081.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000081.txt",
+      "before": [
+        "0 0.23587599 0.31559641 0.10614306 0.45408572",
+        "0 0.58863602 0.54994846 0.05715892 0.19251585"
+      ],
+      "after": [
+        "0 0.23587599 0.31559641 0.10614306 0.45408572"
+      ],
+      "reasons": [
+        "Remove road-shadow box."
+      ]
+    },
+    {
+      "label": "data/public_runner_v1/labels/train/local_pexels_4385897_road_silhouette_0000090.txt",
+      "backup": "artifacts/label_cleanup_20260828/labels_before/labels/train/local_pexels_4385897_road_silhouette_0000090.txt",
+      "before": [
+        "0 0.58922437 0.54706845 0.05852763 0.19671687"
+      ],
+      "after": [
+        "0 0.26598287 0.34399737 0.09562616 0.42829713"
+      ],
+      "reasons": [
+        "Road shadow replaced by silhouetted runner."
+      ]
+    }
+  ]
+}

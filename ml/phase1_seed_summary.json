@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "phase": "perception_neural_network_phase_1_data_foundation",
+  "status": "pipeline_validated_collection_incomplete",
+  "seed_session": {
+    "id": "gazebo_runway_001",
+    "source_sha256": "cb4ed6fb762b627bb65d9446d2ea47b858a9cfe07950327123cbfb53959a633f",
+    "source_messages": 136,
+    "sampled_images": 40,
+    "provisional_objects": 39,
+    "priority_review_images": 1,
+    "teacher_confidence_median": 0.837240993976593,
+    "duplicate_image_groups": 0,
+    "structural_qa": "passed",
+    "annotation_status": "preannotated_requires_human_review",
+    "quality_flags": [
+      "pipeline_smoke_test_only",
+      "runner_top_clipped"
+    ]
+  },
+  "phase_1_exit_blockers": [
+    "Collect at least ten independent sessions across real and simulated conditions.",
+    "Keep the runner fully inside the image during new collections.",
+    "Human-review every provisional box and verified negative frame.",
+    "Generate the session-exclusive runner_v1 train/validation split."
+  ]
+}

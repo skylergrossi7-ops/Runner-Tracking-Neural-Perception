@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-27T18:54:26.077005Z",
+  "status": "passed",
+  "provider": "local",
+  "provider_identifier": "data/public_runner_clips",
+  "source_root": "data/public_runner_clips",
+  "source_url": "https://www.pexels.com",
+  "license": {
+    "name": "Pexels License",
+    "url": "https://www.pexels.com/license/",
+    "acknowledged": true
+  },
+  "verification": {
+    "model": "yolov8n-pose.pt",
+    "method": "COCO full-body keypoints, running-gait score, and temporal sequence persistence",
+    "device": "cpu",
+    "inference_image_size": 960,
+    "frame_interval_seconds": 0.1,
+    "person_confidence": 0.1,
+    "keypoint_confidence": 0.08,
+    "run_score_threshold": 0.2,
+    "minimum_box_height": 12,
+    "minimum_running_sequence_seconds": 1.0,
+    "maximum_running_gap_seconds": 1.0,
+    "annotation_status": "provisional_requires_human_review"
+  },
+  "inspected": {
+    "frames": 3576,
+    "videos": 16
+  },
+  "candidate_images_before_temporal_filter": 516,
+  "candidate_sessions_before_temporal_filter": {
+    "local_pexels_11966894_rural_rear_follow": 2,
+    "local_pexels_16935445_aerial_park": 236,
+    "local_pexels_31956040_desert_road": 19,
+    "local_pexels_31990568_misty_forest_group": 114,
+    "local_pexels_35608296_forest_trail": 3,
+    "local_pexels_36505987_rural_path": 34,
+    "local_pexels_37453838_lake_trail": 7,
+    "local_pexels_4385897_road_silhouette": 23,
+    "local_pexels_8025875_track_field_aerial": 36,
+    "local_pexels_8240074_mountain_road": 11,
+    "local_pexels_855789_waterfront_marathon": 19,
+    "local_pexels_9956051_field_runner": 12
+  },
+  "accepted_images": 412,
+  "accepted_images_by_session": {
+    "local_pexels_16935445_aerial_park": 217,
+    "local_pexels_31956040_desert_road": 18,
+    "local_pexels_31990568_misty_forest_group": 114,
+    "local_pexels_35608296_forest_trail": 3,
+    "local_pexels_36505987_rural_path": 34,
+    "local_pexels_4385897_road_silhouette": 21,
+    "local_pexels_9956051_field_runner": 5
+  },
+  "accepted_runner_boxes": 436,
+  "rejections": {
+    "pose_not_running": 1596,
+    "frame_without_verified_runner": 3060,
+    "not_full_body_or_clipped": 1555,
+    "short_or_isolated_running_sequence": 66,
+    "manual_false_positive_session": 38
+  },
+  "splits": {
+    "train": 360,
+    "val": 52
+  },
+  "leakage_safe": true,
+  "dataset_yaml": "data/public_runner_v1/runner_v1.yaml",
+  "curation": [
+    {
+      "timestamp": "2026-08-27T19:01:36.327437Z",
+      "action": "remove_sessions",
+      "sessions": [
+        "local_pexels_8025875_track_field_aerial",
+        "local_pexels_8240074_mountain_road"
+      ],
+      "reason": "Visual contact-sheet QA found pose-model false positives on stadium structure and vegetation rather than runners.",
+      "removed_images": 38,
+      "removed_boxes": 41
+    },
+    {
+      "timestamp": "2026-08-28T17:46:21.489032Z",
+      "action": "runner_label_cleanup",
+      "changed_label_files": 38,
+      "boxes_before": 55,
+      "boxes_after": 40,
+      "plan": "ml/manifests/runner_label_cleanup_20260828.json",
+      "audit_report": "artifacts/public_runner_v1_label_audit_20260828.json"
+    }
+  ]
+}
