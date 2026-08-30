@@ -23,6 +23,7 @@ DOWNLOAD_RESULTS = True
 
 WORKSPACE = Path("/content/runner_training")
 ARCHIVE = WORKSPACE / "public_runner_v1.zip"
+SESSION_ARCHIVE = Path("/content/public_runner_v1_colab_20260830.zip")
 EXTRACTED = WORKSPACE / "dataset"
 RUNS = WORKSPACE / "runs"
 IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
@@ -61,6 +62,16 @@ def install_dependencies():
 
 def acquire_archive():
     """Download the configured archive or ask the Colab user to upload one."""
+    if SESSION_ARCHIVE.is_file():
+        print(
+            f'[3/7] Found dataset in Colab session storage: '
+            f'{SESSION_ARCHIVE.name}',
+            flush=True,
+        )
+        shutil.copy2(SESSION_ARCHIVE, ARCHIVE)
+        print(f'[3/7] Copied dataset to {ARCHIVE}.', flush=True)
+        return
+
     if DATASET_URL.strip():
         print(
             '[3/7] DATASET_URL is configured; downloading without an upload '
