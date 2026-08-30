@@ -101,6 +101,10 @@ The script prints seven numbered stages, skips dependency installation when the
 packages are already present, and clearly distinguishes the upload wait from
 the automatic epoch loop.
 
+Alternatively, open the
+[one-click Colab notebook](colab/runner_yolo11_training.ipynb), select a GPU,
+run its single code cell, and choose the prepared dataset ZIP when prompted.
+
 ## Scope
 
 This repository certifies perception dataset and detector development. Flight
