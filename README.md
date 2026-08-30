@@ -97,6 +97,9 @@ For a free Google Colab GPU, upload a ZIP containing the complete
 [`colab/train_runner_yolo11.py`](colab/train_runner_yolo11.py) in one notebook
 cell. It rewrites local dataset paths, verifies all image/label pairs, trains
 for 75 epochs, validates `best.pt`, and packages the run for download.
+The script prints seven numbered stages, skips dependency installation when the
+packages are already present, and clearly distinguishes the upload wait from
+the automatic epoch loop.
 
 ## Scope
 

@@ -5,6 +5,7 @@ Set DATASET_URL to a direct/Google Drive URL, or leave it blank for upload.
 """
 
 import json
+import importlib.util
 import os
 import shutil
 import subprocess
@@ -29,14 +30,25 @@ IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".bmp", ".webp"}
 
 def install_dependencies():
     """Install the training dependencies into the active Colab runtime."""
+    required_modules = ('ultralytics', 'yaml', 'gdown', 'requests')
+    missing = [
+        module for module in required_modules
+        if importlib.util.find_spec(module) is None
+    ]
+    if not missing:
+        print('[1/7] Dependencies are already installed.', flush=True)
+        return
+
+    print(
+        '[1/7] Installing missing dependencies: ' + ', '.join(missing),
+        flush=True,
+    )
     subprocess.run(
         [
             sys.executable,
             "-m",
             "pip",
             "install",
-            "--quiet",
-            "--upgrade",
             "ultralytics>=8.3,<9",
             "PyYAML",
             "gdown",
@@ -44,11 +56,17 @@ def install_dependencies():
         ],
         check=True,
     )
+    print('[1/7] Dependency installation finished.', flush=True)
 
 
 def acquire_archive():
     """Download the configured archive or ask the Colab user to upload one."""
     if DATASET_URL.strip():
+        print(
+            '[3/7] DATASET_URL is configured; downloading without an upload '
+            'prompt.',
+            flush=True,
+        )
         if "drive.google.com" in DATASET_URL:
             import gdown
 
@@ -57,6 +75,7 @@ def acquire_archive():
             )
             if not result:
                 raise RuntimeError("Google Drive dataset download failed")
+            print(f'[3/7] Downloaded dataset to {ARCHIVE}.', flush=True)
             return
 
         import requests
@@ -67,16 +86,22 @@ def acquire_archive():
                 for chunk in response.iter_content(1024 * 1024):
                     if chunk:
                         output.write(chunk)
+        print(f'[3/7] Downloaded dataset to {ARCHIVE}.', flush=True)
         return
 
     from google.colab import files
 
-    print("Upload the complete public_runner_v1 ZIP archive.")
+    print(
+        '[3/7] Choose the complete public_runner_v1 ZIP in the upload widget '
+        'below.',
+        flush=True,
+    )
     uploaded = files.upload()
     archives = [name for name in uploaded if name.lower().endswith(".zip")]
     if len(archives) != 1:
         raise RuntimeError("Upload exactly one ZIP archive")
     shutil.move(archives[0], ARCHIVE)
+    print(f'[3/7] Uploaded dataset to {ARCHIVE}.', flush=True)
 
 
 def safe_extract(archive, destination):
@@ -144,6 +169,8 @@ def validate_split(root, split):
 
 def main():
     """Prepare the dataset, train for 75 epochs, validate and download."""
+    print('Runner YOLO11n Colab training pipeline', flush=True)
+    print('This run has seven visible stages.', flush=True)
     install_dependencies()
     import torch
     import yaml
@@ -153,6 +180,10 @@ def main():
         raise RuntimeError(
             "No CUDA GPU detected. Select Runtime > Change runtime type > T4 GPU."
         )
+    print(
+        f'[2/7] GPU ready: {torch.cuda.get_device_name(0)}',
+        flush=True,
+    )
     if WORKSPACE.exists():
         shutil.rmtree(WORKSPACE)
     EXTRACTED.mkdir(parents=True)
@@ -160,12 +191,16 @@ def main():
     acquire_archive()
     if not zipfile.is_zipfile(ARCHIVE):
         raise RuntimeError("The selected dataset is not a valid ZIP archive")
+    print('[4/7] Extracting and locating the YOLO dataset...', flush=True)
     safe_extract(ARCHIVE, EXTRACTED)
     dataset = locate_dataset()
     summary = {
         split: validate_split(dataset, split) for split in ("train", "val")
     }
-    print("Dataset validation passed:", json.dumps(summary, indent=2))
+    print(
+        '[5/7] Dataset validation passed:\n' + json.dumps(summary, indent=2),
+        flush=True,
+    )
 
     data_yaml = WORKSPACE / "runner_v1_colab.yaml"
     data_yaml.write_text(
@@ -182,6 +217,12 @@ def main():
     )
 
     model = YOLO(MODEL)
+    print(
+        f'[6/7] Starting {EPOCHS}-epoch training with {MODEL}. '
+        'Epoch output will continue automatically; no further prompt is '
+        'expected.',
+        flush=True,
+    )
     model.train(
         data=str(data_yaml),
         epochs=EPOCHS,
@@ -242,10 +283,15 @@ def main():
     archive = shutil.make_archive(
         str(WORKSPACE / RUN_NAME), "zip", root_dir=run_directory
     )
-    print("Training complete:", json.dumps(report, indent=2))
+    print(
+        '[7/7] Training and validation complete:\n'
+        + json.dumps(report, indent=2),
+        flush=True,
+    )
     if DOWNLOAD_RESULTS:
         from google.colab import files
 
+        print(f'[7/7] Downloading packaged results: {archive}', flush=True)
         files.download(archive)
 
 
