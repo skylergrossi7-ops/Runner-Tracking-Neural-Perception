@@ -24,6 +24,30 @@ files, and audit trail needed to reproduce the dataset.
 
 See [the dataset card](DATASET_CARD.md) for provenance and limitations.
 
+## Trained-model validation milestone
+
+The first 75-epoch YOLO11n checkpoint was tested on the first five seconds of
+the session-held-out `rural_path` recording (300 frames at 59.94 FPS). The
+runner was detected in every processed frame with no temporal detection gaps.
+All 34 curated validation frames in that interval matched their ground-truth
+box at IoU >= 0.50.
+
+| Measurement | Result |
+| --- | ---: |
+| Frame detection rate | 100% (300/300) |
+| Labeled-frame match rate at IoU 0.50 | 100% (34/34) |
+| Mean best IoU on labeled frames | 0.858 |
+| Mean detection confidence | 0.769 |
+| Longest detection gap | 0 frames |
+
+![Held-out aerial runner detection](docs/model_validation/heldout_rural_path_20260831/rural_path_heldout_preview.jpg)
+
+The [annotated H.264 review video](docs/model_validation/heldout_rural_path_20260831/rural_path_heldout_annotated.mp4),
+[machine-readable metrics](docs/model_validation/heldout_rural_path_20260831/metrics.json),
+and [test methodology](docs/model_validation/heldout_rural_path_20260831/README.md)
+are committed as portfolio evidence. This is a focused session-level test, not
+a claim of production safety or broad-domain generalization.
+
 ## Repository layout
 
 ```text
@@ -39,6 +63,7 @@ data/public_runner_v1/
   splits_v1.json                   session-exclusive split and sample manifest
   dataset_report.json              final structural validation
 docs/label_audit/                  cleanup log, prior labels and review evidence
+docs/model_validation/             held-out model tests and review media
 colab/train_runner_yolo11.py       self-contained 75-epoch Colab trainer
 ```
 
@@ -104,6 +129,19 @@ the automatic epoch loop.
 Alternatively, open the
 [one-click Colab notebook](colab/runner_yolo11_training.ipynb), select a GPU,
 run its single code cell, and choose the prepared dataset ZIP when prompted.
+
+Evaluate a trained checkpoint against a video and generate an annotated video
+plus JSON metrics:
+
+```bash
+python ml/scripts/evaluate_runner_video.py \
+  --weights /path/to/best.pt \
+  --video /path/to/held_out_video.mp4 \
+  --output-video artifacts/held_out_annotated.mp4 \
+  --output-json artifacts/held_out_metrics.json \
+  --conf 0.25 \
+  --imgsz 640
+```
 
 ## Scope
 

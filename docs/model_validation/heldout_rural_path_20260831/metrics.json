@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "test_date": "2026-08-31",
+  "evaluation_scope": "session-held-out validation recording",
+  "session": "local_pexels_36505987_rural_path",
+  "configuration": {
+    "confidence_threshold": 0.25,
+    "iou_threshold": 0.5,
+    "inference_size": 640,
+    "device": "cpu",
+    "max_seconds": 5.0
+  },
+  "video": {
+    "fps": 59.94005994005994,
+    "width": 2560,
+    "height": 1440,
+    "processed_frames": 300,
+    "processed_seconds": 5.005
+  },
+  "detection": {
+    "detected_frames": 300,
+    "frame_detection_rate": 1.0,
+    "mean_confidence": 0.7688178427961488,
+    "minimum_confidence": 0.39836615324020386,
+    "maximum_confidence": 0.9451389312744141,
+    "longest_detection_gap_frames": 0,
+    "longest_detection_gap_seconds": 0.0
+  },
+  "labeled_frame_check": {
+    "labeled_frames_evaluated": 34,
+    "matched_at_iou_0_50": 34,
+    "match_rate": 1.0,
+    "mean_best_iou": 0.8583270813272218
+  },
+  "performance": {
+    "wall_seconds": 50.043582926,
+    "effective_processing_fps": 5.994774603641257,
+    "mean_inference_ms": 93.2432816433332,
+    "p95_inference_ms": 134.00553299999984
+  }
+}

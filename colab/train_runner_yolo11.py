@@ -244,7 +244,9 @@ def main():
         project=str(RUNS),
         name=RUN_NAME,
         exist_ok=True,
-        single_cls=True,
+        # The dataset already has one class. False preserves the class name
+        # "runner" in checkpoint/export metadata instead of renaming it item.
+        single_cls=False,
         optimizer="AdamW",
         lr0=0.0015,
         lrf=0.01,
